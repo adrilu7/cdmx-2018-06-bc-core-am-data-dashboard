@@ -2,60 +2,93 @@
 
 ## **Proceso de UX**
 
-Nuestro primer acercamiento lo haremos a través del proceso de diseño, donde pasamos por diferentes etapas como:
+Nuestro primer acercamiento lo haremos a través del proceso de diseño, donde
+pasamos por diferentes etapas como:
 
 ### **1. Descubrimiento e investigación**
-(En esta fase es donde vamos a tener ese proceso de investigación y acercamiento con el usuario, es donde vamos a obtener el conocimiento para poder saber a quién vamos a llegar, pero de manera más profunda. Es tener la empatía y el acercamiento necesario para conocerlo.
 
-También vamos a tener en cuenta al negocio, sus objetivos y a los stakeholders(involucrados)).
+Existe actualmente un problema en el manejo de las bases de datos en Laboratoria,
+Las Training Managers y staff cuentan con google drive, spreadSheets, excel entre
+otras como herramienta para manipularla no es funcional ni práctica como
+quisieran ya que es un poco tedioso de manipular por lo cual se busca una
+solución, Un Data-dashboard seria lo mas factible para ello habrá un acercamiento
+con Tms y staff que nos permitirá saber sus necesidades así poder saber cómo
+implementar una buena solución, se hicieron algunas entrevistas que nos
+permitieran orientar nuestras ideas de la plataforma hacia las necesidades de
+nuestros usuarios.
+Las TMs hacen un gran  trabajo al analizar la mayor cantidad de información
+respecto al progreso de las estudiantes que permita consultar la información
+sobre el avance y desarrollo de las alumnas de Laboratoria de manera ordenada
+dinámica y priorizando las necesidades del usuario.
 
-__Usuarixs:__  (Toda la información que sepas de ellxs, ya sea porque las has podido observar o porque obtuviste datos directamente de ellas)
+Lucile Training Manager  Cdmex
+Su objetivo como TM es que el staff de laboratoria haga bien su trabajo,
+midiendo todo el tiempo el desempeño de las alumnas esto sirve para informar a
+los coaches ver en lo que están fallando deacuerdo al desempeño de las alumnas
+y tomar decisiones si están o no funcionando las estrategias, si es necesario
+cambiarlas.
+Que le interesa a lucile  de un data-dasboard?
+Le interesa que sea intuitivo, acceder de forma rápida a la información, no es
+tan necesario tener graficas y si las tiene que sea fácil de interpretar, el ver
+porcentajes da mayor idea de la proporción de las alumnas, seria de mucha
+ultilidad tener acceso rápido a la información de cualquier alumna.
+Le gustaría tener login, poder escoger la sede, generación y aparezca data
+general, y si quiere buscar a alguna información de alumna en particular poder
+filtrarla. Ver la información procesada y tener toma de decisiones para mejorar.
+Jonathan parra Coach
+Es parte del equipo de formación que se encarga de que las estudiantes tengan
+apoyo durante el bootcamp, maneja bases de datos para saber como va el desempeño
+de las estudiantes actualmente usa Excel, comparten información por drive.
+karla rejas Training Manager
+Liderea el equipo de formación, utiliza data para ver el desempeño de las
+estudiantes, visualizan la data por medio de spreadsheets. Excel le parece mucha
+perdida de tiempo no tiene información actualizada, le gustaría ver porcentajes
+de las alumnas para su desempeño.
 
-__Necesidades de las usuarias:__
+Alejandra Ramirez Training Manager lima
+Mantiene un seguimiento del progreso de las estudiantes y según ello tomar las
+decisiones necesarias para ofrecerles la mejor experiencia de aprendizaje, usa
+base de datos  para conocer cómo están avanzando las estudiantes, visualiza por
+medio de spreadsheet lleno de data en tablas.
 
+Mike Coach
+Imparte clases y asesorías personalizadas usa base de datos para capturar
+progresos y observaciones asistencias, calificaciones y ver progresos, usa
+mayormente data de calificaciones de los spring de los proyectos, y avances
+en el LMS, comparte información por Excel.
+![] (/Imagenes/Audio.jpg)
 
-__Objetivos de las usuarias:__ (Lo que quieren o esperan lograr)
+Usuarixs: Nuestras principales usuarias Tms, estan en constante comunicación
+tanto con el staff como con las alummas, quisieran que fuera mas facil el
+acceder a las bases de datos.
 
+Necesidades de las usuarias:No cuentan con una herramienta para un facil manejo
+de sus bases de datos al igual que este en constante actualización de la
+información un data-dashboard seria bastante util.
 
-__Pain points:__ (En sus actividades diarias qué es lo que más les molesta u obstaculiza en el proceso de  realizar sus actividades/objetivos)
+Objetivos de las usuarias: tener una aplicación que muestre de forma sencilla
+los datos al igual una buena visualización de los resultados.
 
-__Sentimientos:__(Sentimientos que les surgen dentro del proceso de sus actividades. Identificar cuáles predominan)
+Pain points:Desperdician mucho tiempo manipulando tanta data,
 
-__Técnicas usadas en esta fase:__ (Sabemos que en este punto, tal vez, sólo has ocupado encuestas, no te olvides de documentar este proceso de recolección de datos)
+Sentimientos:(Sentimientos que les surgen dentro del proceso de sus actividades. Identificar cuáles predominan)
 
-__5. Objetivos del negocio:__ (Enlistarlo(s))
+Técnicas usadas en esta fase: (Sabemos que en este punto, tal vez, sólo has ocupado encuestas, no te olvides de documentar este proceso de recolección de datos)
 
-__6. Motivaciones del negocio para el data dashboard:__(Enlistarlo(s))
+Objetivos del negocio:_ (Enlistarlo(s))
 
-### **2. Síntesis y definición**
-(Dada la fase anterior de investigación, ahora vamos a tomar todos los datos más importantes y transformarlos en información valiosa para comenzar a orientarse a la solución. También vamos a entender lo que la empresa quiere de ese producto y comenzar a entender ambas visiones con el fin de encontrar un punto armónico)
+Motivaciones del negocio para el data dashboard:(Enlistarlo(s))
 
-__1. Cuáles crees que son los datos más importantes a tener en cuenta para el Data Dashboard:__
+### **Sketch inicial**
+![] (/Imagenes/01.jpg)
+![] (/Imagenes/02.jpg)
+![] (/Imagenes/03.jpg)
+![] (/Imagenes/04.jpg)
+![] (/Imagenes/05.jpg)
 
-   - Sobre las estudiantes:
- 
+Se mejoro Sketch
 
-__2. Lo que los usuarios esperan obtener:__
-
-
-__3. Insights:__
-
-__4. Data proporcionada:__ 
-
-     -_Data relacionada a los cursos:_
-
-__5. Insights del negocio:__
-
-### **3. Ideación**
-(Acá se comienza a pensar esa solución tomando en cuenta la información recopilada y procesada)
-
-### **4. Prototipado**
-(Esta es la fase creativa, donde se comienza a construir el Data dashboard con la información obtenida de las fases anteriores. Se reafirma crear la experiencia de usuario, donde la solución resuelve necesidades y facilita la vida)
-
-Sketch: (Adjuntar liga)
-
-Prototipo en figma: (Adjuntar liga)
-
-### **5. User testing**
-(Si deseas validar tu propuesta, acércate a tu usuario y que te de feedback con el fin de mejorar tu producto en beneficio del negocio y de tu usuarix).
-****
+![] (/Imagenes/001.jpg)
+![] (/Imagenes/002.jpg)
+![] (/Imagenes/003.jpg)
+![] (/Imagenes/004.jpg)
