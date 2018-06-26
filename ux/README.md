@@ -56,7 +56,7 @@ Imparte clases y asesorías personalizadas usa base de datos para capturar
 progresos y observaciones asistencias, calificaciones y ver progresos, usa
 mayormente data de calificaciones de los spring de los proyectos, y avances
 en el LMS, comparte información por Excel.
-![] (/Imagenes/Audio.jpg)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/Audio.jpg?raw=true)
 
 Usuarixs: Nuestras principales usuarias Tms, estan en constante comunicación
 tanto con el staff como con las alummas, quisieran que fuera mas facil el
@@ -80,15 +80,18 @@ Objetivos del negocio:_ (Enlistarlo(s))
 Motivaciones del negocio para el data dashboard:(Enlistarlo(s))
 
 ### **Sketch inicial**
-![] (../Imagenes/01.jpg)
-![] (../Imagenes/02.jpg)
-![] (../Imagenes/03.jpg)
-![] (../Imagenes/04.jpg)
-![] (../Imagenes/05.jpg)
+
+
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/001.jpg?raw=true)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/002.jpg?raw=true)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/003.jpg?raw=true)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/004.jpg?raw=true)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/005.jpg)
+
 
 Se mejoro Sketch
 
-![] (../Imagenes/001.jpg)
-![] (../Imagenes/002.jpg)
-![] (../Imagenes/003.jpg)
-![] (../Imagenes/004.jpg)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/01.jpg?raw=true)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/02.jpg?raw=true)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/04.jpg?raw=true)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/05.jpg?raw=true)
