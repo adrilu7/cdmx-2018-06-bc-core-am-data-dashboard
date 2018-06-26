@@ -80,15 +80,15 @@ Objetivos del negocio:_ (Enlistarlo(s))
 Motivaciones del negocio para el data dashboard:(Enlistarlo(s))
 
 ### **Sketch inicial**
-![] (/Imagenes/01.jpg)
-![] (/Imagenes/02.jpg)
-![] (/Imagenes/03.jpg)
-![] (/Imagenes/04.jpg)
-![] (/Imagenes/05.jpg)
+![] (../Imagenes/01.jpg)
+![] (../Imagenes/02.jpg)
+![] (../Imagenes/03.jpg)
+![] (../Imagenes/04.jpg)
+![] (../Imagenes/05.jpg)
 
 Se mejoro Sketch
 
-![] (/Imagenes/001.jpg)
-![] (/Imagenes/002.jpg)
-![] (/Imagenes/003.jpg)
-![] (/Imagenes/004.jpg)
+![] (../Imagenes/001.jpg)
+![] (../Imagenes/002.jpg)
+![] (../Imagenes/003.jpg)
+![] (../Imagenes/004.jpg)
