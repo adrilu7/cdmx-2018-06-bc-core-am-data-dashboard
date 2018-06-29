@@ -7,6 +7,7 @@ pasamos por diferentes etapas como:
 
 ### **1. Descubrimiento e investigación**
 
+En Laboratoria, las Training Managers (TMs) realizan una gran labor al analizar y procesar una cantidad considerabole de datos al día, de acuerdo al progreso de las estudiantes y todo ello con el pr 
 Existe actualmente un problema en el manejo de las bases de datos en Laboratoria,
 Las Training Managers y staff cuentan con google drive, spreadSheets, excel entre
 otras como herramienta para manipularla no es funcional ni práctica como
