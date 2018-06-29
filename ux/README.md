@@ -7,27 +7,16 @@ pasamos por diferentes etapas como:
 
 ### **1. Descubrimiento e investigación**
 
-En Laboratoria, las Training Managers (TMs) realizan una gran labor al analizar y procesar una cantidad considerabole de datos al día, de acuerdo al progreso de las estudiantes y todo ello con el pr 
-Existe actualmente un problema en el manejo de las bases de datos en Laboratoria,
-Las Training Managers y staff cuentan con google drive, spreadSheets, excel entre
-otras como herramienta para manipularla no es funcional ni práctica como
-quisieran ya que es un poco tedioso de manipular por lo cual se busca una
-solución, Un Data-dashboard seria lo mas factible para ello habrá un acercamiento
-con Tms y staff que nos permitirá saber sus necesidades así poder saber cómo
-implementar una buena solución, se hicieron algunas entrevistas que nos
-permitieran orientar nuestras ideas de la plataforma hacia las necesidades de
-nuestros usuarios.
-Las TMs hacen un gran  trabajo al analizar la mayor cantidad de información
-respecto al progreso de las estudiantes que permita consultar la información
-sobre el avance y desarrollo de las alumnas de Laboratoria de manera ordenada
-dinámica y priorizando las necesidades del usuario.
+En Laboratoria, las Training Managers (TMs) realizan una gran labor al analizar y procesar una cantidad considerable de datos al día, de acuerdo al progreso de las estudiantes y todo ello con el propósito de apoyarlas en su aprendizaje durante el bootcamp y después del mismo.
 
-Lucile Training Manager  Cdmex
-Su objetivo como TM es que el staff de laboratoria haga bien su trabajo,
-midiendo todo el tiempo el desempeño de las alumnas esto sirve para informar a
-los coaches ver en lo que están fallando deacuerdo al desempeño de las alumnas
-y tomar decisiones si están o no funcionando las estrategias, si es necesario
-cambiarlas.
+Para apoyar a este gran equipo que se esfuerza día con día en mejorar la experiencia de las estudiantes, así es como se plantea el elaborar una interfaz donde las TMs puedar visualizar y hacer uso de la data que pueda ser de mayor utilidad o más relevante para ellas por medio de un tablero de visualización de datos.  
+
+Al entrevistar a dos de las Training Managers (Lucile TM de Ciudad de México y a Carla TM de Guadalajara) se obtiene la importancia para ellas de contar con un Data Dashboard con una data ya procesada con información relevante para ellas, debido a que las herramientas con las que cuentan para manipular esa data no es muy práctica para consultar y utilizar, algunas de esas herramientas son muy básicas como google drive y excel, mismas que consultan a diario y puede resultar agotador estar con muchas pestañas abiertas e incluso se presta a tener una pérdida de tiempo al buscar datos que en una plataforma podrías optimizar esa misma labor al procesar la información ya filtrada.
+
+Las TMs tienen el objetivo de comunicar al staff de Laboratoria para generar una comunicación funcional al poder visualizar en números o porcentajes el desempeño de cada una de las estudiantes y con ello tomar decisiones de que estrategias podrían ser funcionales para aplicar durante clases. 
+
+
+
 Que le interesa a lucile  de un data-dasboard?
 Le interesa que sea intuitivo, acceder de forma rápida a la información, no es
 tan necesario tener graficas y si las tiene que sea fácil de interpretar, el ver
