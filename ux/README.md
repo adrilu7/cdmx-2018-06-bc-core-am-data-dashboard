@@ -23,6 +23,10 @@ __Objetivos de las usuarias:__ Espera que la aplicación sea intuitiva y que el 
 
 __Pain points:__ Las herramientas que utiliza diariamente son muy básicas como excel y sí requiere data de otra sede debe recurrir a Google Drive navegar en las distintas secciones de la app, encontrar lo que requiere filtrando de manera manual, se le dificulta visualizar tantos documentos y con la complicación de cada sistema de control de las otras sedes no es un sistema unificado.
 
+Se realizaron audios de las entrevistas a los usuarios y se ocupo material compartido con compañeras de otros squads.
+
+![Audios](Images/Audio.Entrevistas.jpg)
+
 #### Entrevistados (Información obtenida con apoyo del grupo) 
 
 Karla Rejas Training Manager Sede Guadalajara:Liderea el equipo de formación, utiliza data para ver el desempeño de las estudiantes, visualizan la data por medio de spreadsheets. Excel le parece mucha pérdida de tiempo no tiene información actualizada, le gustaría ver porcentajes de las estudiantes para su desempeño.
@@ -68,19 +72,26 @@ __5. Insights del negocio:__
 
 En dupla comenzamos a maquetar en nuestras mentes una manera de obtener un producto sencillo a la vista, de fácil utilización y manipulación, pero con la potencia o posibilidad de dar solución a una necesidad bastante clara, teniendo el acercamiento de nuestra Training Manager de Ciudad de México, y de tener la delicadeza de comprender y aterrizar esa solución a algo funcional.
 
-### **4. Prototipado**
+### **4. Prototipado** 
 
-A continuación se muestra en imágenes el proceso en papel de nuestro sketch de baja fidelidad y con el feedback que se obtenga proceder a uno de mediana fidelidad.
+A continuación se muestra en imágenes el proceso en papel de nuestro sketch de baja fidelidad y con el feedback que se obtenga proceder a uno de mediana fidelidad de igual forma se procede con un prototipo elaborado en Marvel app de baja fidelidad.
 
 Sketch: 
 ![Primera pantalla](Images/01.sketch.jpg)
 ![Segunda pantalla](Images/02.sketch.jpg)
 ![Tercera pantalla](Images/03.sketch.jpg)
 ![Cuarta pantalla](Images/04.sketch.jpg)
-![Quinta pantalla](Images/04.sketch.jpg)
+![Quinta pantalla](Images/05.sketch.jpg)
 
 
-Prototipo en figma: (Adjuntar liga)
+Prototipo en Marvel: :floppy_disk: :computer: :space_invader: (https://marvelapp.com/project/3150233/) 
+
+![Visualización uno y dos](Images/001.proto.jpg)
+![Visualización tres y cuatro](Images/002.proto.jpg)
+![Visualización cinco y seis](Images/003.proto.jpg)
+![Visualización siete y ocho](Images/004.proto.jpg)
+![Visualización final](Images/005.proto.jpg)
+
 
 ### **5. User testing**
 (Si deseas validar tu propuesta, acércate a tu usuario y que te de feedback con el fin de mejorar tu producto en beneficio del negocio y de tu usuarix).
