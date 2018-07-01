@@ -73,11 +73,11 @@ En dupla comenzamos a maquetar en nuestras mentes una manera de obtener un produ
 A continuación se muestra en imágenes el proceso en papel de nuestro sketch de baja fidelidad y con el feedback que se obtenga proceder a uno de mediana fidelidad.
 
 Sketch: 
-![Primera pantalla](/Images/01.sketch.jpg)
-![Segunda pantalla](/Images/02.sketch.jpg)
-![Tercera pantalla](/Images/03.sketch.jpg)
-![Cuarta pantalla](/Images/04.sketch.jpg)
-![Quinta pantalla](/Images/04.sketch.jpg)
+![Primera pantalla](Images/01.sketch.jpg)
+![Segunda pantalla](Images/02.sketch.jpg)
+![Tercera pantalla](Images/03.sketch.jpg)
+![Cuarta pantalla](Images/04.sketch.jpg)
+![Quinta pantalla](Images/04.sketch.jpg)
 
 
 Prototipo en figma: (Adjuntar liga)
