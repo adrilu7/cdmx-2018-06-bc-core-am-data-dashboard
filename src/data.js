@@ -1,15 +1,55 @@
-window.computeStudentsStats(laboratoria) = {
+window.computeStudentsStats = (laboratoria) => {
+   /* const sedesArray = [];
+    const object = {
+        name: '',
+        email: '',
+        campus: '',
+        generation: '',
+        stats: 0,
+    };
+    let stats = 0; +
+*/
+
+
+}
+
+window.computeGenerationsStats = (laboratoria) => {
+    const generationsArray = [];
+    const obj = {
+        campus: '',
+        generation: '',
+        average: 0,
+        count: 0,
+    };
+    let average = 0;
+    for (key in laboratoria) {
+        obj.campus = key;
+        average = 0;
+        const generations = Object.keys(laboratoria[key].generacion);
+        generations.forEach((generation) => {
+            obj.generation = generation;
+            const students = laboratoria[key].generacion[generation].estudiantes;
+            for (student in students) {
+                average += students[student].progreso.porcentajeCompletado;
+                average = average / students.length;
+                obj.average = average;
+                obj.count = students.length;
+                generationsArray.push(obj);
+
+            }
+        })
+
+    }
+    return generationsArray;
+
+}
+
+window.sortStudents = (students, orderBy, orderDirection) => {
+  
+
 
 } 
 
-window.computeGenerationsStats(laboratoria) = {
+window.filterStudents = (students, search) => {
 
-}
-
-window.sortStudents(students, orderBy, orderDirection) = {
-
-}
-
-window.filterStudents(students, search) = {
-    
 }
