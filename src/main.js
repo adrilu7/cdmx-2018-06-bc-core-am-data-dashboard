@@ -1,10 +1,10 @@
 
 //Declaración de variables para llamar los contenedores de la página 
 let mainPage = document.querySelector("#main-page");
-let selectCampusDashboard1 = document.querySelector("#select-campus-dashboard-1");
-let selectCampusDashboard2 = document.querySelector("#select-campus-dashboard-2");
-let selectGenerationDashboard1 = document.querySelector("#select-generation-dashboard-1");
-let selectGenerationDashboard2 = document.querySelector("#select-generation-dashboard-2");
+let selectCampusDashboard1 = document.querySelector("#select-campus");
+let selectCampusDashboard2 = document.querySelector("#select-campus");
+let selectGenerationDashboard1 = document.querySelector("#select-generation");
+let selectGenerationDashboard2 = document.querySelector("#select-generation");
 
 
 const urlData = "https://raw.githubusercontent.com/AdrianaTV/Proyecto-2--Laboratoria-Data-Dashboard/master/data/laboratoria.json";
