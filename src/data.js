@@ -1,16 +1,5 @@
 window.computeStudentsStats = (laboratoria) => {
-   /* const sedesArray = [];
-    const object = {
-        name: '',
-        email: '',
-        campus: '',
-        generation: '',
-        stats: 0,
-    };
-    let stats = 0; +
-*/
-
-
+   
 }
 
 window.computeGenerationsStats = (laboratoria) => {

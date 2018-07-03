@@ -3,23 +3,33 @@ const laboratoria = "https://raw.githubusercontent.com/AdrianaTV/Proyecto-2--Lab
   const getSede = () => {
     fecth(laboratoria)
     .then (response => response.json() )
-    .then ((data) =>{
+    .then ((datos) =>{
     //    console.log(data);
-       const generations = datos.computeGenerationsStats(data);
-       const headquarters = datos.obtainHeadquarters(data); 
-       const generationsData = datos.computeStudentsStats(data);
+       const generations = data.computeGenerationsStats(datos);
+       const headquarters = data.obtainHeadquarters(datos); 
+       const generationsData = data.computeStudentsStats(datos);
     //    console.log(generationsData);
+    const allTheStudents = data.computeStudentsStats(datos);
 
-
-      
-  
-        
     })
     .catch((error) =>{
-        console.log("Error de Esve 😦")
-    })
+        console.log("Error de Esve");
+    });
 
 }
+
+getData();
+
+const drawHeadquarters = (sedes) =>{
+    sedes.forEach((sede) => {
+        const option = documen.createElement('option');
+        option.innerHTML = sede.toUpperCase();
+        selectHeadquarters.appendChild(option);
+        
+    });
+    
+}
+
 /*
 myData();
 
