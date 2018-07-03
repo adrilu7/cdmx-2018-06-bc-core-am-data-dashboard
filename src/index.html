@@ -6,17 +6,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <h2>Selecciona la Sede</h2>
-      <div id="boton-Lima"></div>
-      <input type="button"  value="LIMA" id="lima">
-      </div>
-      <div id="boton-Cdmx">
-      <input type="button" value="CDMX" id="cdmx">
-      </div>
-      <div id="boton-Santiago">
-      <input type="button" value="SANTIAGO" id="santiago">
-      </div>
-    
+  <h1>Bienvenidos a Laboratoria Data Dashboard</h1>
+  <div id="main-page">        
+    <label>Selecciona una sede:</label>
+    <select class="form-control" id="select-campus-dashboard-1">
+    <option value="Sede" disabled selected>Sede</option>
+    </select>
+    <button type="button"class="btn btn-default" id="select1">Ver</button>
+  </div>
+    <div class="form-group">
+    <label>Selecciona una generación:</label>
+    <select class="form-control" id="select-generation-dashboard-1">
+    <option value="Generación" disabled selected>Generación</option>
+    </select>
+    <button type="button"class="btn btn-default" id="select1">Ver</button>
+  </div>
+  <button type="button" onclick="getSede()">Data</button>
     <script src="main.js"></script>
     <script src="data.js"></script>
   </body>

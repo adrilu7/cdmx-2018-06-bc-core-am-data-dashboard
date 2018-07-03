@@ -1,5 +1,42 @@
 window.computeStudentsStats = (laboratoria) => {
-   
+    let studentsArray = [];
+    let nombreEstudiante;
+    let mailEstudiante;
+    let porcentajeEstudiante;
+    let statusEstudiante;
+    let generacionEnSede;
+    for(venue in laboratoria){
+      let sede = venue; 
+      const generations = Object.keys(laboratoria[venue].generacion); 
+      generations.forEach((generationVenue) => {
+        //console.log(generationInVenue); //Me da los nombres de las generaciones para cada sede en string
+       generacionEnSede = generationVenue;
+        //console.log(student);
+        const students = laboratoria[venue].generacion[generationVenue].estudiantes;
+        //console.log(students);
+        students.forEach((student) => {
+          nombreEstudiante = student.nombre; //Agregamos nombre de estudiante
+          mailEstudiante = student.correo; //Agregamos correo de estudiante
+          porcentajeEstudiante = student.progreso.porcentajeCompletado; //Agregamos porcentaje de avance general
+          let progress = porcentajeEstudiante;
+          if (progress < 60) {
+            statusEstudiante = "below"; //Indicamos que esta debajo del 60%
+          } else if (progress > 90) {
+            statusEstudiante = "over"; //Indicamos que esta sobre el 90%
+          } else {
+            statusEstudiante = "average"; //Indicamos que esta en la media
+          };
+          studentsArray.push({'name': nombreEstudiante,'email': mailEstudiante, 'campus': sede, 'generation': generacionEnSede, 'stats':{
+            'status': statusEstudiante, 'completedPercentage': porcentajeEstudiante}});
+          
+        });
+      });
+    }
+    //console.log(studentsArray);
+    return studentsArray;
+    
+  
+  
 }
 
 window.computeGenerationsStats = (laboratoria) => {

@@ -1,9 +1,11 @@
-const sedeLima = document.querySelector("#boton-Lima");
-const sedeCdmx= document.querySelector("#boton-Cdmx");
-const sedeSantiago = document.querySelector("#boton-Santiago");
-let clickLima = document.querySelector("#lima");
-let clickCdmx = document.querySelector("#cdmx");
-let clickSantiago = document.querySelector("#santiago");
+
+//Declaración de variables para llamar los contenedores de la página 
+let mainPage = document.querySelector("#main-page");
+let selectCampusDashboard1 = document.querySelector("#select-campus-dashboard-1");
+let selectCampusDashboard2 = document.querySelector("#select-campus-dashboard-2");
+let selectGenerationDashboard1 = document.querySelector("#select-generation-dashboard-1");
+let selectGenerationDashboard2 = document.querySelector("#select-generation-dashboard-2");
+
 
 const urlData = "https://raw.githubusercontent.com/AdrianaTV/Proyecto-2--Laboratoria-Data-Dashboard/master/data/laboratoria.json";
 
