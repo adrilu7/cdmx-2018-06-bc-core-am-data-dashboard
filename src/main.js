@@ -1,7 +1,14 @@
-const laboratoria = "https://raw.githubusercontent.com/AdrianaTV/Proyecto-2--Laboratoria-Data-Dashboard/master/data/laboratoria.json";
+const sedeLima = document.querySelector("#boton-Lima");
+const sedeCdmx= document.querySelector("#boton-Cdmx");
+const sedeSantiago = document.querySelector("#boton-Santiago");
+let clickLima = document.querySelector("#lima");
+let clickCdmx = document.querySelector("#cdmx");
+let clickSantiago = document.querySelector("#santiago");
+
+const urlData = "https://raw.githubusercontent.com/AdrianaTV/Proyecto-2--Laboratoria-Data-Dashboard/master/data/laboratoria.json";
 
   const getSede = () => {
-    fecth(laboratoria)
+    fetch(urlData)
     .then (response => response.json() )
     .then ((datos) =>{
     //    console.log(data);
@@ -13,12 +20,12 @@ const laboratoria = "https://raw.githubusercontent.com/AdrianaTV/Proyecto-2--Lab
 
     })
     .catch((error) =>{
-        console.log("Error de Esve");
-    });
+        // console.log("Error de Esve");
+    })
 
 }
 
-getData();
+getSede();
 
 const drawHeadquarters = (sedes) =>{
     sedes.forEach((sede) => {
@@ -28,25 +35,4 @@ const drawHeadquarters = (sedes) =>{
         
     });
     
-}
-
-/*
-myData();
-
-const drawCampus = (res) => {
-    const sedes = Object.keys(res);
-
-    const containerCampus = document.getElementById('campus');
-    sedes.forEach((sede) => {
-        const option = document.createElement('option');
-        option.innerHTML = sede;
-        containerCampus.appendChild(option);
-    });
-
-    containerCampus.addEventListener('change', iteratorGenerations);
 };
-
-
-const drawGenerations = (e) => {
-    //computeGenerationsStats(laboratoria)
-};*/
