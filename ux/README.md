@@ -82,16 +82,19 @@ Motivaciones del negocio para el data dashboard:(Enlistarlo(s))
 ### **Sketch inicial**
 
 
-![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/001.jpg?raw=true)
-![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/002.jpg?raw=true)
-![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/003.jpg?raw=true)
-![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/004.jpg?raw=true)
+![Proto 1]
+ (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/001.jpg)
+![Proto 2]
+(https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/002.jpg)
+![Proto 3]
+ (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/003.jpg)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/004.jpg)
 ![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/005.jpg)
 
 
 Se mejoro Sketch
 
-![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/01.jpg?raw=true)
-![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/02.jpg?raw=true)
-![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/04.jpg?raw=true)
-![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/05.jpg?raw=true)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/01.jpg)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/02.jpg)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/04.jpg)
+![] (https://github.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/blob/master/ux/Imagenes/05.jpg)
