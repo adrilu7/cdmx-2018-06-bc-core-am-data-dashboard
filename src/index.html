@@ -3,24 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
-
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img src="../imagen/logo_laboratotia.jpg">
-    <div class="">
-      <button id="btnsed" type="button" name="button">Sedes</button>
-      <button id="btngen" type="button" name="button">Generación</button>
-      <div class="" id="sede" >
-        <h1>Dato  sede</h1>
-
-      </div>
-      <div class="" id="gen" style="display:none">
-        <h1>Hola GEN</h1>
-
-      </div>
-
-    </div>
+  <h1>Bienvenidos a Laboratoria Data Dashboard</h1>
+  <div id="main-page">        
+    <label>Selecciona la sede:</label>
+    <select class="form-control" id="select-campus">
+    <option value="Sede" disabled selected>Sedes</option>
+    </select>
+    <button type="button"class="btn btn-default" id="select1">Ver</button>
+  </div>
+    <div class="form-group">
+    <label>Selecciona la generación:</label>
+    <select class="form-control" id="select-generation">
+    <option value="Generación" disabled selected>Generaciones</option>
+    </select>
+    <button type="button"class="btn btn-default" id="select1">Ver</button>
+  </div>
+  <button type="button" onclick="getSede()">Data</button>
     <script src="main.js"></script>
+    <script src="data.js"></script>
   </body>
 </html>
