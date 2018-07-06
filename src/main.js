@@ -1,20 +1,15 @@
-let api = "https://api.myjson.com/bins/1bl1iu";
-let btnsede = document.getElementById('btnsed');//boton
-let btngen = document.getElementById('btngen');//boton
-let datos="";
 
-btnsede.addEventListener("click", function(){
-  document.getElementById("sede").style.display = "block";
-  document.getElementById("gen").style.display = "none";
-});
+//Declaración de variables para llamar los contenedores de la página 
+let mainPage = document.querySelector("#main-page");
+let selectCampusDashboard1 = document.querySelector("#select-campus");
+let selectCampusDashboard2 = document.querySelector("#select-campus");
+let selectGenerationDashboard1 = document.querySelector("#select-generation");
+let selectGenerationDashboard2 = document.querySelector("#select-generation");
 
-btngen.addEventListener("click", function(){
-  document.getElementById("sede").style.display = "none";
-  document.getElementById("gen").style.display = "block";
-  FunSede();
 
-});
+const urlData = "https://raw.githubusercontent.com/AdrianaTV/Proyecto-2--Laboratoria-Data-Dashboard/master/data/laboratoria.json";
 
+<<<<<<< HEAD
 let FunSede = function(){
   fetch(api).then(function(datos){
   return datos.json();
@@ -32,3 +27,34 @@ let FunSede = function(){
 
   })
 }
+=======
+  const getSede = () => {
+    fetch(urlData)
+    .then (response => response.json() )
+    .then ((datos) =>{
+    //    console.log(data);
+       const generations = data.computeGenerationsStats(datos);
+       const headquarters = data.obtainHeadquarters(datos); 
+       const generationsData = data.computeStudentsStats(datos);
+    //    console.log(generationsData);
+    const allTheStudents = data.computeStudentsStats(datos);
+
+    })
+    .catch((error) =>{
+        // console.log("Error de Esve");
+    })
+
+}
+
+getSede();
+
+const drawHeadquarters = (sedes) =>{
+    sedes.forEach((sede) => {
+        const option = documen.createElement('option');
+        option.innerHTML = sede.toUpperCase();
+        selectHeadquarters.appendChild(option);
+        
+    });
+    
+};
+>>>>>>> 46ef8ab8ae28044e2cebeebbd698142f8c8cec81
