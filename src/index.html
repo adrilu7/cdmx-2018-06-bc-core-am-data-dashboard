@@ -1,55 +1,58 @@
 <!DOCTYPE html>
+<html>
   <head>
-<<<<<<< HEAD
-  	<meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Login</title>
-  </head>
-  <body>
-    <header class="row">
-      <div class="contenedor-formulario">
-        <img class="Logo "src="imagen/laboratoria_logo_rgb_01_480.png">
-    </header>
-  		<div class="wrap">
-  			<form action="" class="formulario" name="formulario_registro"  method="pos">
-  				<div>
-  					<div class="input-grupo">
-              <label class="label" for="nombre">Nombre:</label>
-  						<input type="text" id="nombre" name="nombre">
-  					</div>
-  					<div class="input-group">
-              <label class="label" for="pass">Contraseña:</label>
-  						<input type="password" id="pass" name="pass">
-  					</div>
-  					<input type="submit" id="btn-submit" value="Enviar">
-  				</div>
-  	<script src="data.js"></script>
-=======
     <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> <!-- esta es libreria boostrap carpeta -->
+    <link rel="stylesheet" href="fontawesome/css/all.css"> <!-- esta carpeta de los iconos -->
     <title>Data Dashboard</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-  <h1>Bienvenidos a Laboratoria Data Dashboard</h1>
-  <div id="main-page">        
-    <label>Selecciona la sede:</label>
-    <select class="form-control" id="select-campus">
-    <option value="Sede" disabled selected>Sedes</option>
-    </select>
-    <button type="button"class="btn btn-default" id="select1">Ver</button>
-  </div>
-    <div class="form-group">
-    <label>Selecciona la generación:</label>
-    <select class="form-control" id="select-generation">
-    <option value="Generación" disabled selected>Generaciones</option>
-    </select>
-    <button type="button"class="btn btn-default" id="select1">Ver</button>
-  </div>
-  <button type="button" onclick="getSede()">Data</button>
->>>>>>> 46ef8ab8ae28044e2cebeebbd698142f8c8cec81
-    <script src="main.js"></script>
-    <script src="data.js"></script>
+    <header>
+      <div class="container-fluid"> <!-- este es el contenedor completo -->
+          <div class="container">
+              <div class="row justify-content-center"> <!-- se justica el contenido y centra -->
+                  <img src="imagen/01 (61).png" alt="laboratoria"> <!-- imagen del header -->
+              </div>
+          </div>
+      </div>
+    </header>
+
+    <div class="container-fluid mb-3">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-10-center m-3"> <!-- m- es el margin el 3 es el numero col la columna y 10 su tamaño -->
+                  <h1> ¡Bienvenidos!</h1>
+              </div>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-6 align-self-center login">
+                      <h3>Inicio de Sesión</h3>
+                      <form>
+                          <div class="form-group">
+                              <label for="usuario"><b><i class="fas fa-user-alt"></i> Usuario</b></label><br>
+                              <input type="text" id="usuario" placeholder="Nombre de Usuario" name="usuario" required >
+                          </div>
+                          <div class="form-group">
+                              <label for="cont"><b><i class="fas fa-key"></i> Contraseña</b></label><br>
+                              <input type="password" id="cont" placeholder="Contraseña" name="cont" required >
+                          </div>
+                          <button type="submit" id="inicio">Iniciar Sesión</button>
+                      </form>
+              </div>
+          </div>
+      </div>
+    </div>
   </body>
+
+
+
+
+
+
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
 </html>
