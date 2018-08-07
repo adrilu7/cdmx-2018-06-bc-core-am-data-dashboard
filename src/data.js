@@ -1,53 +1,135 @@
+
+const urlLab =
+'https://raw.githubusercontent.com/adrilu7/cdmx-2018-06-bc-core-am-data-dashboard/master/data/laboratoria.json';
+// Función global para traer la data
+window.onload = () => {
+  fetch(urlLab)
+    .then(response => response.json())
+    .then(res => {
+      const allData = computeStudentsStats(res);
+      // paintCampus(allData);
+      // paintGenerations(allData);
+      paintSearch(allData);
+      paintCampus(allData);
+      // Argumento(invoca la función) para pasar el valor lo recibe como response, pero se modifica para los test
+    });
+  // .catch((error) => {
+  //  console.log(error);
+  // })
+};
+
+window.getStats = (progress) => {
+  let stats = {};
+  let topicsArr = progress.temas;
+  stats.completePercentage = progress.porcentajeCompletado;
+
+  if (progress.porcentajeCompletado < 60) {
+    stats.status = 'bajo rendimiento';
+  }
+  if (progress.porcentajeCompletado > 60 && progress.porcentajeCompletado < 90) {
+    stats.status = 'medio rendimiento';
+  } else {
+    stats.status = 'alto rendimiento';
+  }
+  stats.topics = topicsArr;
+  let properties = Object.values(progress.temas);
+
+  properties.forEach(content => {
+    content.completePercentage = content.porcentajeCompletado;
+    content.percentageDuration = Math.round(
+      (content.duracionTemaCompletado * 100) / content.duracionTema
+    );
+    let subTopicsArr = content.subtemas;
+    let subProperties = Object.values(subTopicsArr);
+    subProperties.forEach(subContent => {
+      subContent.type = subContent.tipo;
+      subContent.duration = subContent.duracionSubtema;
+      if (subContent.completado === 1) {
+        subContent.completePercentage = 100;
+      } else {
+        subContent.completePercentage = 0;
+      }
+    });
+  });
+  return stats;
+};
+// Se nombra al parametro (la definen)
+window.computeStudentsStats = (laboratoria) => {
+  // Se crean estás variables para crear el objeto con las propiedas
+  // se crea una variable let de sedes
+  let studentArr = [];
+  let i = 0;
+  // se usa un método para traer el nombre de las propiedades nos trae un arreglo{de objeto}
+  let campus = Object.keys(laboratoria);
+  // console.log(campus)
+  // se crea una variable let para traer y pedir los valores del objeto laboratoria
+  let generationObjectArr = Object.values(laboratoria);
+  // console.log(generationObjectArr);
+  // Se define hasta donde se recorre en la data
+  // component es una función callback para recorrer los niveles de la data, para iteraciones.
+  generationObjectArr.forEach(component => {
+    // console.log(component)
+    // Va a dar  el valor del objeto component a un arreglo con los nombres de las sedes (campus)
+    let allGenerations = Object.keys(component.generacion);
+    // console.log(allGenerations);
+    let byGenerationContent = Object.values(component.generacion);
+    // console.log(byGenerationContent);
+    j = 0;
+    byGenerationContent.forEach(student => {
+      let students = student.estudiantes;
+      students.forEach(allInfoStudent => {
+        let stats = getStats(allInfoStudent.progreso);
+        studentArr.push({
+          campus: campus[i],
+          generations: allGenerations[j],
+          name: allInfoStudent.nombre,
+          email: allInfoStudent.correo,
+          turn: allInfoStudent.turno,
+          stats: stats
+        });
+      });
+      j++; // se va a recorrer uno a uno para recorrer uno a uno la información dentro de generación
+    });
+    i++; // va a recorrer uno a uno la información de las sedes
+  });
+  // console.log(studentArr);
+  return studentArr;
+};
+
+window.filterStudents = (students, search) => {
+  let searchResult = [];
+  students.forEach(resElement => {
+    if (resElement.name.indexOf(search) !== -1) {
+      searchResult.push(resElement);
+    }
+  });
+  return searchResult;
+};
+
+window.filterItereitorCampus = (students, search) => {
+  let searchResult = [];
+  students.forEach(resElement => {
+    if (resElement.campus === search) {
+      searchResult.push(resElement);
+    }
+  });
+  return searchResult;
+};
+
+window.filterItereitorGenerations = (students, search) => {
+  let searchResult = [];
+  students.forEach(resElement => {
+    if (resElement.generations === search) {
+      searchResult.push(resElement);
+    }
+  });
+  // console.log(searchResult);
+  return searchResult;
+};
+
 boton = document.getElementById('inicio');
 
-boton.addEventListener('click', function(){
+boton.addEventListener('click', () => {
   console.log("Hola");
   window.location.href ="index.html";
-}, false);
-
-
-//Declaración de variables let para llamar los contenedores de la página en HTML
-
-const paintStudents = allStudents => {
-  // console.log(allStudents);
-
-}
-
-const paintSearch = allStudents => {
-  document.getElementById('search').addEventListener('click', (event) => {
-    event.preventDefault();
-   const name = document.getElementById('name-to-search').value;
-    if (name != '' && name != ' ') {
-      const sedeLima = document.getElementById('campus-lima').value;
-      const sedeMexico = document.getElementById('campus-mexico').value;
-      const sedeSantiago = document.getElementById('campus-santiago').value;
-      const searchResult = filterStudents(allStudents, name);
-      //console.log(searchResult);
-      let paintSearch = '';
-      if (searchResult.length === 0) {
-        document.getElementById('no-paint').innerHTML =
-          `<p> No se encuentra en la búsqueda </p>
-      `
-      } else {
-        searchResult.forEach((component, i) => {
-          paintSearch += `<tr>
-        <th scope="row"> ${[i+1]}</th>
-        <td>${component.name}</td>
-        <td>${component.campus}</td>
-        <td>${component.generations}</td>
-        <td>${component.email}</td>
-        <td>${component.stats.completePercentage} % </td>
-      </tr>`
-
-        })
-
-        document.getElementById('no-paint').innerHTML = '';
-        document.getElementById('table-body').innerHTML = paintSearch;
-
-
-      }
-    }
-
-  })
-}
-
+})
