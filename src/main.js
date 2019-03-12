@@ -13,6 +13,20 @@ const paintCampus = (allData) => {
         `<p> No se encuentra en la búsqueda </p>
     `;
     } else {
+      document.getElementById('tableData').style.display = "block";
+      paintSearchCampus = `<table class='table'>
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Sede</th>
+                <th scope="col">Generación</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Progreso</th>
+              </tr>
+            </thead>
+            <tbody>`;
+
       searchResultGeneration.forEach((component, i) => {
         paintSearchCampus += `<tr>
         <th scope="row"> ${i + 1}</th>
@@ -23,8 +37,14 @@ const paintCampus = (allData) => {
         <td>${component.stats.completePercentage} % </td>
       </tr>`;
       });
+
+      paintSearchCampus += `</tbody>
+      </table>`;
+
+
       document.getElementById('no-paint').innerHTML = '';
-      document.getElementById('table-body').innerHTML = paintSearchCampus;
+      document.getElementById('tableData').innerHTML = paintSearchCampus;
+
     }
   });
 };
@@ -32,6 +52,8 @@ const paintCampus = (allData) => {
 const paintSearch = (allData) => {
   // console.log(allData);
   document.getElementById('search').addEventListener('click', (event) => {
+
+    document.getElementById('tableData').style.display = "none";
     const name = document.getElementById('name-to-search').value;
     const searchResult = filterStudents(allData, name);
     // console.log(searchResult);
@@ -41,6 +63,18 @@ const paintSearch = (allData) => {
         `<p> No se encuentra en la búsqueda </p>
       `;
     } else {
+      paintSearch = `<table class='table'>
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Sede</th>
+                <th scope="col">Generación</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Progreso</th>
+              </tr>
+            </thead>
+            <tbody>`;
       searchResult.forEach((component, i) => {
         paintSearch += `<tr>
         <th scope="row"> ${[i + 1]}</th>
@@ -51,8 +85,12 @@ const paintSearch = (allData) => {
         <td>${component.stats.completePercentage} % </td>
       </tr>`;
       });
+
+      paintSearch += `</tbody>
+      </table>`;
+      document.getElementById('tableData').style.display = "block";
       document.getElementById('no-paint').innerHTML = '';
-      document.getElementById('table-body').innerHTML = paintSearch;
+      document.getElementById('tableData').innerHTML = paintSearch;
     }
   });
 };

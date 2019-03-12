@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0eaed;
+}
+input[type=text], input[type=password] {
+  width: 53%;
+  padding: 10px 14px;
+  margin: 8px 0;
+  border-radius: 10px;
+  height: 40%;
+  font-size: .6em;
+}
+form{
+  padding: 5px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+h3{
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.img1{
+  margin-top: 50px;
+}
+.login {
+  background-color: #f0eaed;
+  padding: 10px;
+  font-family: 'Righteous', cursive;
+  margin-top: 40px;
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+#cont {
+  font-size:.7em;
+}
+
+#usuario {
+  font-size:.7em;
+}
+
+#inicio {
+  padding: 6px;
+  font-weight:normal ; /*negritas*/
+  margin: 8px 0;
+  font-size: .7em;
+  /*background-color:#da6e5b !important;*/
+  background-color:black!important;
+  color: #f3e66b !important;
+  border-radius: 7px;
+  height: 47px;
+  width: 100px;
+}
+
+/* sirve la media para decir apartir de 600 se hara mas grande por lo tanto puse tamaño pequeño a todo*/
+@media only screen and (min-width:600px) {
+  header img{
+      max-width: 100%;
+  }
+  button {
+      width: 50%;
+  }
+  /*.login form{
+      font-size: 1.5em;
+  }*/
+}
+
+

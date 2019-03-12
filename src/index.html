@@ -1,74 +1,107 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Laboratoria Data Dashboard</title>
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> <!-- esta es libreria boostrap carpeta -->
-  <link rel="stylesheet" href="fontawesome/css/all.css"> <!-- esta carpeta de los iconos -->
-  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">  <!-- link de tipo de letra -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <title>Data Dashboard</title>
+  <link rel="icon" href="img/Lab.jpg">
 </head>
 <header>
-  <div class="container-fluid data"> <!-- este es el contenedor completo -->
-          <div class="row justify-content-between">
-              <div class="col-4-center">
-                  <img src="imagen/01 (61).png" alt="laboratoria">
-                <input type="text" id="name-to-search"style="width:300px">
-                <button type="button" id="search" style="width:200px">Búsqueda</button>
-              </div>
-              <div class="col-4-center">
-                  <a href="login.html"><i class="fas fa-sign-out-alt fa-lg"> Salir</i></a>
-              </div>
-          </div>
-  </div>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <div>
+          <img src="img/001.png" class="Lab" alt="imagen de laboratoria">
+        </div>
+          <a class="salir btn btn-light" href="login.html"> Salir<i class="fas fa-sign-out-alt fa-lg"></i></a>
+        </nav>
 </header>
+
 <body>
-    <div class="form-group">
-      <label for="select-campus-one"style="color:rgb(255, 229, 33";>Selecciona una sede:</label>
-      <select class="form-control" id="select-campus"style="width:300px">
-        <option value="" disabled selected>Selecciona...</option>
-        <option value="lima">Lima</option>
-        <option value="mexico">México</option>
-        <option value="santiago">Santiago</option>
-      </select>
-          <label for="select-generation-one"style="color:rgb(255, 229, 33";>Selecciona la generación:</label>
-          <select class="form-control" id="select-generation"style="width:300px">
-            <option value="" disabled selected>Generación...</option>
-            <option value="tercera">Tercera</option>
-            <option value="cuarta">Cuarta</option>
-            <option value="quinta">Quinta</option>
-          </select>
+  <div class="fila">
+    <div class="col-40 uno justify-content-center form-group">
+        <div class="busqueda">
+            <form class="form-inline form-group">
+              <input type="text" id="name-to-search" placeholder="Nombre de estudiante">
+              <button  class="btn btn-outline-dark" type="button" id="search"><i class="fas fa-search"></i></button>
+            </form>
         </div>
-        <button id="view"style="width:300px">Explorar</button>
-        <div class="container">
-          <div class="row">
-          </div>
+        <label for="select-campus-one" class="sede">Sedes</label>
+        <select class="form-control" id="select-campus">
+          <option value="" disabled selected>Selecciona..</option>
+          <option value="lima">Lima</option>
+          <option value="mexico">México</option>
+          <option value="santiago">Santiago</option>
+        </select>
+        <label for="select-generation-one"  class="generaciòn">Generación</label>
+        <select class="form-control" id="select-generation">
+          <option value="" disabled selected>Selecciona..</option>
+          <option value="tercera">Tercera</option>
+          <option value="cuarta">Cuarta</option>
+          <option value="quinta">Quinta</option>
+        </select>
+        <button id="view" class="btn btn-outline-dark justify-content-center">Buscar</button>
+    </div>
+    <div class="col-60">
+        <div id="tableData">
         </div>
-        <div class="container">
-          <div class="row">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col"style="color:rgb(255, 229, 33";>#</th>
-                  <th scope="col"style="color:rgb(255, 229, 33";>Nombre</th>
-                  <th scope="col"style="color:rgb(255, 229, 33";>Sede</th>
-                  <th scope="col"style="color:rgb(255, 229, 33";>Generación</th>
-                  <th scope="col"style="color:rgb(255, 229, 33";>Correo</th>
-                  <th scope="col"style="color:rgb(255, 229, 33";>Progreso</th>
-                </tr>
-              </thead>
-              <tbody id="table-body"style="color:rgb(255, 229, 33";>
-              </tbody>
-            </table>
-            <div id="no-paint"style="color:rgb(255, 229, 33";></div>
-          </div>
-        </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+        <div id="no-paint"></div>
+    </div>
+  </div>
+
+ <!-- <div class="uno justify-content-center form-group">
+    <label for="select-campus-one ">Sedes</label>
+    <select class="form-control" id="select-campus">
+      <option value="" disabled selected>Selecciona...</option>
+      <option value="lima">Lima</option>
+      <option value="mexico">México</option>
+      <option value="santiago">Santiago</option>
+    </select>
+    <label for="select-generation-one">Generación</label>
+    <select class="form-control" id="select-generation">
+      <option value="" disabled selected>Selecciona...</option>
+      <option value="tercera">Tercera</option>
+      <option value="cuarta">Cuarta</option>
+      <option value="quinta">Quinta</option>
+    </select>
+    <button id="view" class="justify-content-center">Buscar</button>
+    <div class="busqueda ">
+      <form class="form-inline form-group">
+        <input type="text" id="name-to-search">
+        <button type="button" id="search">Búsqueda</button>
+      </form>
+    </div>
+  </div>
+        <table class="row table tab">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Sede</th>
+              <th scope="col">Generación</th>
+              <th scope="col">Correo</th>
+              <th scope="col">Progreso</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+          </tbody>
+        </table>
+        <div id="no-paint"></div>-->
+
   <script src="main.js"></script>
   <script src="data.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
