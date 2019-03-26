@@ -56,17 +56,6 @@ h3{
   width: 100px;
 }
 
-/* sirve la media para decir apartir de 600 se hara mas grande por lo tanto puse tamaño pequeño a todo*/
-@media only screen and (min-width:600px) {
-  header img{
-      max-width: 100%;
-  }
-  button {
-      width: 50%;
-  }
-  /*.login form{
-      font-size: 1.5em;
-  }*/
-}
+
 
 

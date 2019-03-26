@@ -56,7 +56,7 @@ table{
 #select-campus{
   font-size: 1em;
   font-family: 'Righteous', cursive;
-  border-radius: 10px;
+  border-radius: 7px;
   width: 47%;
   margin: 0px;
   margin-left: 80px;
@@ -75,7 +75,7 @@ table{
 #select-generation{
   font-size: 1em;
   font-family: 'Righteous', cursive;
-  border-radius: 10px;
+  border-radius: 7px;
   width: 47%;
   margin: 0px;
   margin-left: 80px;
@@ -93,7 +93,6 @@ table{
 
 #name-to-search{
   width: 45%;
-  border-radius: 7px;
   font-size: 1em;
   height: 40px;
   margin-left: 70px;
@@ -109,8 +108,7 @@ table{
   color:#ffe426 !important;
   border: none;
   height: 40px;
-  margin-left: 7px;
-  border-radius:7px;
+  border-radius:0 6 6 0px;
 }
 
 .form-group{
